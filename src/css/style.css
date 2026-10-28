@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f1eb;
+    color: #2f1b1b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background: linear-gradient(135deg, #3b0d18, #641b2a, #3b0d18);
+    color: #f8f1e7;
+    text-align: center;
+    padding: 50px 20px 45px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.subtitulo {
+    font-size: 18px;
+    font-weight: 300;
+    color: #dfc7a4;
+    margin-bottom: 30px;
+}
+
+header img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.apresentacao {
+    background-color: #fffdf9;
+    max-width: 850px;
+    padding: 45px 55px;
+    border-radius: 14px;
+    border-top: 4px solid #8f263d;
+    box-shadow: 0 8px 25px rgba(61, 29, 29, 0.1);
+}
+
+.apresentacao h2 {
+    text-align: center;
+    color: #641b2a;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.apresentacao p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #4b3a3a;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+.dica {
+    background-color: #f1e5d3;
+    border-left: 4px solid #d4af6a;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 14px !important;
+    font-style: italic;
+    color: #5c4040 !important;
+}
+
+
+footer {
+    background-color: #2a1118;
+    color: #d8c5ae;
+    text-align: center;
+    padding: 22px;
+    font-size: 14px;
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 35px 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .subtitulo {
+        font-size: 16px;
+    }
+
+    header img {
+        width: 230px;
+        height: 155px;
+    }
+
+    main {
+        padding: 35px 15px;
+    }
+
+    .apresentacao {
+        padding: 30px 25px;
+    }
+
+    .apresentacao h2 {
+        font-size: 24px;
+    }
+
+    .apresentacao p {
+        font-size: 15px;
+        text-align: left;
+    }
+}
