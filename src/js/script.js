@@ -96,16 +96,32 @@ while (continuar) {
         break;
     }
 
-    let resposta = prompt(
-        "Deseja cadastrar outro vinho? (sim/não)"
-    );
+    let resposta;
 
-    if (
-        resposta === null ||
-        resposta.trim().toLowerCase() !== "sim"
-    ) {
-        continuar = false;
+    while (true) {
+        resposta = prompt(
+            "Deseja cadastrar outro vinho? (sim/não)"
+        );
+
+        if (resposta === null) {
+            continuar = false;
+            break;
+        }
+
+        resposta = resposta.trim().toLowerCase();
+
+        if (resposta === "sim") {
+            break;
+        }
+
+        if (resposta === "não" || resposta === "nao") {
+            continuar = false;
+            break;
+        }
+
+        alert("Resposta inválida! Digite sim ou não.");
     }
 }
 
 alert("Cadastro finalizado!");
+
