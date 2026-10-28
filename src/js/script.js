@@ -162,3 +162,44 @@ function avisarEstoqueBaixo(nome, estoque) {
         );
     }
 }
+
+function classificarVinho(safra) {
+    const anoAtual = new Date().getFullYear();
+    const idade = anoAtual - safra;
+
+    if (idade <= 3) {
+        return "Jovem";
+    } else if (idade <= 10) {
+        return "Amadurecido";
+    } else {
+        return "Antigo";
+    }
+}
+
+function validarEntrada(valor, tipo) {
+    if (valor === null) {
+        return false;
+    }
+
+    if (tipo === "nome") {
+        return valor.trim() !== "";
+    }
+
+    if (valor.trim() === "") {
+        return false;
+    }
+
+    const numero = Number(valor);
+
+    if (tipo === "safra") {
+        return Number.isInteger(numero) &&
+            numero >= 1900 &&
+            numero <= new Date().getFullYear();
+    }
+
+    if (tipo === "estoque") {
+        return Number.isInteger(numero) && numero >= 0;
+    }
+
+    return false;
+}
