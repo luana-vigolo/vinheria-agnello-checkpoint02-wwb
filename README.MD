@@ -39,9 +39,10 @@ Nesta etapa, o projeto dá continuidade à proposta de cadastro de vinhos, imple
 ## Acesse o Projeto
 
 Repositório no GitHub: 
-https://github.com/luana-vigolo/vinheria-agnello-checkpoint02-wwb
+https://github.com/luana-vigolo/vinheria-agnello-checkpoint02-wwb.git
 
 GitHub Pages: 
+https://luana-vigolo.github.io/vinheria-agnello-checkpoint02-wwb/
 
 
 ---
